@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+body{
+    background:black;
+    color:white;
+}
+
+
+.placements {
+  padding: 60px 0;
+  overflow: hidden;
+}
+.placements h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+.company-marquee {
+  width: 100%;
+  overflow: hidden;
+}
+.company-track {
+  display: flex;
+  width: max-content;
+  gap: 70px;
+  animation: scroll 40s linear infinite;
+ 
+}
+.company-track span {
+  font-size: 24px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #d0cbcb;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
