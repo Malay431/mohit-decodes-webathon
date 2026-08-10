@@ -1,1 +1,2 @@
-Mohit Decodes Webathon.
+Mohit Decodes Webathon (Ongoing)
+Tech Stack : React, Tailwind CSS.
