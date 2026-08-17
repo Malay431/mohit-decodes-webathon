@@ -3,11 +3,11 @@ import React from "react";
 const CompanyScroll = () => {
   return (
     <div>
-      <section class="placements">
+      <section className="placements">
         <h2 className="text-slate-200">Helped students achieve job at</h2>
 
-        <div class="company-marquee">
-          <div class="company-track">
+        <div className="company-marquee">
+          <div className="company-track">
             <span>Google</span>
             <span>Microsoft</span>
             <span>Amazon</span>

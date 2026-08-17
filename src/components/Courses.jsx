@@ -3,28 +3,28 @@ import { Link } from "react-router-dom";
 
 const course = [
   {
-    img: "https://i.ytimg.com/pl_c/PLRZ6VeEliFnI/studio_square_thumbnail.jpg?sqp=CLuw5tMG-oaymwEICIAKENAFSFqi85f_AwYI8-_S0wY=&rs=AOn4CLCMj0VDWexh-_G04BXSsm9kn73XRQ",
+    img: "./mern.jpg",
     title: "MERN Stack Full Course",
     desc: "A structured learning path designed to help you become a professional Full Stack Developer from beginner to advanced. Learn with practical examples, hands-on coding, real-world projects, and interview-focused concepts.",
     views: "200K",
     videos: "9",
-    link:"https://www.youtube.com/playlist?list=PLRZ6VeEliFnI",
+    link: "https://www.youtube.com/playlist?list=PLRZ6VeEliFnI",
   },
   {
-    img: "https://i.ytimg.com/vi/t5fnhXuxQIw/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLADW6Q8yNiqaxhbaFFGGf6a8uDpVQ",
+    img: "./dsa.jpg",
     title: "DSA Complete Course",
     desc: "Learn Data Structures & Algorithms from scratch in this beginner-to-interview level course. Build strong DSA fundamentals with clear logic and a problem-solving mindset.",
     views: "500K",
     videos: "63",
-    link:"https://www.youtube.com/playlist?list=PLsjpRo2EZP1LKQePmuWv8jppLddppmGkn",
+    link: "https://www.youtube.com/playlist?list=PLsjpRo2EZP1LKQePmuWv8jppLddppmGkn",
   },
   {
-    img: "https://i.ytimg.com/pl_c/PLTXzNb1c0NSQ/studio_square_thumbnail.jpg?sqp=CNuX5tMG-oaymwEICKoDEPABSFqi85f_AwYIpuG40gY=&rs=AOn4CLDjiwNm3mtDEsgeoDfBa9l7CAJtyA",
-    title: "Nest JS Complete Course",
-    desc: "Whether you're a beginner, an Express.js developer, or an experienced Node.js developer looking to build scalable backend applications, this course will guide you step by step with practical examples and real-world projects.",
+    img: "./mean.jpg",
+    title: "MEAN Stack Complete Course",
+    desc: "Structured learning path designed to help you become a professional Full Stack Developer from beginner to advanced. Every tutorial is explained step by step with practical examples, hands-on coding, real-world projects, and interview-focused concepts.",
     views: "80K",
     videos: "24",
-    link:"https://www.youtube.com/playlist?list=PLTXzNb1c0NSQ",
+    link: "https://www.youtube.com/playlist?list=PLTXzNb1c0NSQ",
   },
 ];
 
@@ -46,10 +46,11 @@ const Courses = () => {
       <div className="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
         {course.map((cour, index) => (
           <Link
-          to={cour.link}
-          target='_blank'
+            to={cour.link}
+            target="_blank"
             key={index}
-            className="group overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 shadow-lg transition duration-300 hover:border-slate-700 hover:shadow-2xl">
+            className="group overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 shadow-lg transition duration-300 hover:border-slate-700 hover:shadow-2xl"
+          >
             {/* Image */}
             <div className="relative overflow-hidden">
               <img
@@ -80,7 +81,11 @@ const Courses = () => {
                   👁 {cour.views} views
                 </span>
 
-                <Link to={cour.link} target="_blank" className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-500">
+                <Link
+                  to={cour.link}
+                  target="_blank"
+                  className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-500"
+                >
                   View Course
                 </Link>
               </div>
