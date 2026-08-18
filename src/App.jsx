@@ -8,9 +8,13 @@ import Roadmaps from './pages/Roadmaps'
 import Testimonials from './pages/Testimonials'
 import Courses from './pages/Courses'
 import Contact from './pages/Contact'
+import Blogs from './pages/Blogs'
+import Resources from './pages/Resources'
+import ScrollTop from './components/ScrollTop'
 const App = () => {
   return (
     <div>
+      <ScrollTop/>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -19,6 +23,8 @@ const App = () => {
         <Route path='/testimonials' element={<Testimonials/>}/>
         <Route path='/courses' element={<Courses/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/blogs' element={<Blogs/>}/>
+        <Route path='/resources' element={<Resources/>}/>
       </Routes>
       <Footer/>
     </div>
